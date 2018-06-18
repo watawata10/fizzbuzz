@@ -34,18 +34,22 @@ public class App {
 		if(nanko == 2) {
 			if (wararerukazu % kazuArray[0] == 0) return fizzbuzzArray[0];
 			if (wararerukazu % kazuArray[1] == 0) return fizzbuzzArray[1];
+			if (wararerukazu % (kazuArray[0]+kazuArray[1] )== 0) return fizzbuzzArray[0]+fizzbuzzArray[1];
 			return String.valueOf(wararerukazu);
 			}
 		if(nanko == 3) {
 			if (wararerukazu % kazuArray[0] == 0) return fizzbuzzArray[0];
 			if (wararerukazu % kazuArray[1] == 0) return fizzbuzzArray[1];
 			if (wararerukazu % kazuArray[2] == 0) return fizzbuzzArray[2];
+			if (wararerukazu % (kazuArray[0]+kazuArray[1]+kazuArray[2]) == 0) return fizzbuzzArray[0]+fizzbuzzArray[1]+fizzbuzzArray[2];
+
 			return String.valueOf(wararerukazu);
 			}else {
 			if (wararerukazu % kazuArray[0] == 0) return fizzbuzzArray[0];
 			if (wararerukazu % kazuArray[1] == 0) return fizzbuzzArray[1];
 			if (wararerukazu % kazuArray[2] == 0) return fizzbuzzArray[2];
 			if (wararerukazu % kazuArray[3] == 0) return fizzbuzzArray[3];
+			if (wararerukazu % (kazuArray[0]+kazuArray[1]+kazuArray[2]+kazuArray[3]) == 0) return fizzbuzzArray[0]+fizzbuzzArray[1]+fizzbuzzArray[2]+fizzbuzzArray[3];
 			return String.valueOf(wararerukazu);
 			}
 		}
